@@ -281,6 +281,9 @@ label,
   justify-content: space-between;
   align-items: center;
 }
+.footer-last-2 {
+  display: none;
+}
 
 .second {
   display: flex;
