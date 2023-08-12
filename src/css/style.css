@@ -395,6 +395,7 @@ label,
   .user-info input,
   .user-info textarea {
     height: 21px;
+    width: 100%;
   }
   .button {
     margin-top: -10px;
@@ -417,8 +418,12 @@ label,
     gap: 12px;
   }
   .icons {
-    gap: 35px;
+    justify-content: space-between;
     height: 24px;
+    gap: 0;
+  }
+  .number {
+    width: 110px;
   }
   .icon img {
     width: 20px;
@@ -431,10 +436,53 @@ label,
   .form-box {
     padding-top: 40px;
   }
+  .icons::before {
+    content: "";
+    width: calc(100% - 41px);
+    margin: auto;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    opacity: 0.1;
+    transform: translateX(-50%);
+    margin-top: 61px;
+    background-color: #ffffff;
+  }
   .conteiner-2 {
     display: none;
   }
   .footer-last {
     display: none;
+  }
+  .footer-last-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: calc(100% - 41px);
+    margin: auto;
+    padding-top: 85.5px;
+    padding-bottom: 40px;
+  }
+  .first {
+    font-size: 13px;
+    opacity: 0.6;
+  }
+  .second {
+    font-size: 13px;
+    order: -1;
+  }
+  .heart-2 {
+    width: 20px;
+    height: 17px;
+  }
+  .logo-2 {
+    width: 121px;
+    height: 35px;
+  }
+  .burger {
+    cursor: pointer;
   }
 }
