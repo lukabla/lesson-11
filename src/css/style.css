@@ -16,6 +16,17 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "HelveticaNeueLTGEO-regular";
+  src: url("../fonts/HelveticaNeueLTGEO-55Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueLTGEO-55Roman.woff") format("woff"),
+    url("../fonts/HelveticaNeueLTGEO-55Roman.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* HEADER START */
 
 header {
   background-color: #0020f4;
@@ -79,15 +90,76 @@ header {
 .navbar-li:hover::after {
   width: 55%;
 }
+
+/* HEADER END */
+
+/* MAIN START */
+
+.main-section {
+  margin: auto;
+  margin-top: -173px;
+  max-width: 1195px;
+}
+.main-section img {
+  border-radius: 15px;
+}
+h2 {
+  font-family: "HelveticaNeue-bold";
+  font-size: 28px;
+  margin: 30px 0 60px 0;
+  color: #171717;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box img {
+  width: 219px;
+  height: 219px;
+}
+.main-text {
+  max-width: 951px;
+  margin: auto;
+  margin-top: 60px;
+}
+.main-text p {
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 18px;
+  font-family: "HelveticaNeueLTGEO-regular";
+  color: #171717;
+}
+.see-more {
+  margin: 58px auto 180px;
+  display: flex;
+  justify-content: center;
+}
+.see-more button {
+  background-color: #0020f4;
+  border-radius: 28px;
+  border: none;
+  width: 341px;
+  height: 55px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "HelveticaNeue-bold";
+}
+footer {
+  background-color: #0020f4;
+  height: 200px;
+}
+
 @media (max-width: 1024px) {
   header {
     height: 185px;
     padding-top: 40px;
-    position: relative;
     border-radius: 0 0 20px 20px;
   }
   .conteiner {
-    width: 97px;
+    display: flex;
+    justify-content: center;
   }
   .logo img {
     width: 97px;
@@ -95,5 +167,42 @@ header {
   }
   .navbar {
     display: none;
+  }
+  .main-section {
+    margin-top: -50px;
+    max-width: 334px;
+  }
+  .main-section img {
+    width: 334px;
+    height: 210px;
+  }
+  h2 {
+    font-family: "HelveticaNeue-bold";
+    font-size: 18px;
+    margin: 16px 0 40px 0;
+  }
+  .box img {
+    width: 162px;
+    height: 90px;
+  }
+  .last-img {
+    display: none;
+  }
+  .main-text {
+    margin-top: 40px;
+  }
+  .main-text p {
+    font-size: 14px;
+  }
+  .none {
+    display: none;
+  }
+  .see-more {
+    margin: 12px auto 40px;
+    width: 334px;
+    height: 56px;
+  }
+  .see-more button {
+    font-size: 13px;
   }
 }
